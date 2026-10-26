@@ -581,7 +581,7 @@ function medallion(code, stone, shape){
   </svg>`;
 }
 /* real product photo when hosted; falls back to the medallion where the image can't load */
-const pic = (i, shape) => medallion(i.code, i.stone, shape) + (i.photo ? `<img src="${i.photo}" alt="${i.name}">` : i.img ? `<img src="${i.img}" alt="${i.name}" loading="lazy" onerror="this.remove()">` : "");
+const pic = (i, shape) => medallion(i.code, i.stone, shape) + (i.photo ? `<img src="${i.photo}" alt="${i.name}" loading="lazy">` : i.img ? `<img src="${i.img}" alt="${i.name}" loading="lazy" onerror="this.remove()">` : "");
 const gbp = n => "£" + n.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2});
 const byCode = c => items.find(i => i.code === c);
 
