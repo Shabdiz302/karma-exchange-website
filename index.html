@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Karma Exchange | Persian gold jewellery in London</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Karma Exchange | Persian gold jewellery in London">
+<meta property="og:description" content="Persian gold jewellery and accessories, new and second-hand. 231a Nether Street, London N3 1NT.">
+<meta property="og:image" content="/img/logo.png">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<meta name="description" content="Karma Exchange, 231a Nether Street, London N3 1NT. Persian gold jewellery and accessories, new and second-hand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Jost:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@500&family=Vazirmatn:wght@400;500&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+/* Layout: a Persian treasury in Karma Exchange's brand green and gold. Green ground, gold leaf, Nastaliq calligraphy as the second voice; every product sits on its own generated girih medallion until its photo is added. */
+:root{
+  --night:#012A21;      /* deep Karma green */
+  --lapis:#014435;      /* Karma brand green */
+  --panel:#0B5543;
+  --ivory:#F7F1E6;
+  --mist:#D8CCC0;       /* brand beige */
+  --dim:#BFA598;        /* brand tan */
+  --gold:#F2D071;       /* brand gold */
+  --gold-deep:#C9A64A;
+  --turq:#3FB3A7;
+  --ruby:#B53A52;
+  --rule:rgba(242,208,113,.26);
+  --display:"Gilda Display","Cormorant Garamond",Georgia,serif;
+  --body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --nast:"Noto Nastaliq Urdu","Vazirmatn",Tahoma,serif;
+  --fa:"Vazirmatn",Tahoma,sans-serif;
+  --gl:max(16px, env(safe-area-inset-left, 0px));
+  --gr:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--night);color:var(--ivory);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--night)}
+a{color:inherit}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.08;text-wrap:balance}
+.fa{font-family:var(--fa);direction:rtl;unicode-bidi:isolate}
+.nast{font-family:var(--nast);direction:rtl;unicode-bidi:isolate;line-height:2.1}
+.kicker{font:500 12px/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.orn{display:flex;align-items:center;gap:14px;color:var(--gold)}
+.orn::before,.orn::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;padding:15px 26px;font:500 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);background:var(--gold);color:var(--night);cursor:pointer;transition:background .25s ease,color .25s ease}
+.btn:hover{background:var(--ivory);border-color:var(--ivory)}
+.btn.line{background:transparent;color:var(--gold)}
+.btn.line:hover{background:var(--gold);color:var(--night)}
+
+/* bar + header */
+.bar{background:#011C16;font-size:12px;letter-spacing:.08em;color:var(--mist)}
+.bar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 24px;padding-block:9px}
+.bar b{color:var(--gold);font-weight:500}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:rgba(1,42,33,.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding-block:14px}
+.top nav{display:flex;gap:26px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.top nav a{text-decoration:none;color:var(--mist)}
+.top nav a:hover{color:var(--gold)}
+.logo{display:flex;flex-direction:column;align-items:center;text-decoration:none;line-height:1}
+.logo img{height:62px;width:auto}
+.logo b{font:400 26px/1 var(--display);letter-spacing:.32em;padding-left:.32em}
+.logo span{font:500 18px/1.6 var(--nast);color:var(--gold);margin-top:-2px}
+.hright{display:flex;justify-content:flex-end;align-items:center;gap:14px}
+.hright .visit{font-size:13px;color:var(--mist);text-decoration:none;letter-spacing:.06em}
+.bagbtn{position:relative;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--rule);background:transparent;color:var(--ivory);cursor:pointer}
+.bagbtn:hover{border-color:var(--gold);color:var(--gold)}
+.bagbtn svg{width:22px;height:22px}
+.bagbtn .count{position:absolute;top:-7px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--ruby);color:#fff;font:600 11px/20px var(--body);text-align:center}
+.bagbtn .count[data-zero]{display:none}
+@media (max-width:900px){.top nav{display:none}.top .wrap{grid-template-columns:1fr auto}.logo{align-items:flex-start}.hright .visit{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule);background:radial-gradient(120% 90% at 78% 40%,#0B5E4A 0%,var(--night) 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding-block:72px 80px}
+.hero h1{font-size:clamp(46px,6.4vw,92px);margin:20px 0 6px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero .nast{font-size:clamp(24px,2.6vw,34px);color:var(--gold);margin:0 0 18px}
+.hero .nast{text-align:left}
+.hero .slogan-en{margin:-14px 0 22px;font:italic 400 17px/1.4 var(--display);color:var(--mist);letter-spacing:.02em}
+.hero p.lede{font-size:18px;color:var(--mist);max-width:31em;margin:0 0 34px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .ctas .btn{flex:none}
+.medal{position:relative;aspect-ratio:1;width:100%;max-width:560px;justify-self:center}
+.medal canvas{position:absolute;inset:0;width:100%;height:100%}
+.medal .fig{position:absolute;left:50%;top:50%;width:38%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;overflow:hidden;border:2px solid var(--gold);box-shadow:0 0 0 8px rgba(242,208,113,.14),0 30px 60px -20px rgba(0,0,0,.6)}
+.medal .fig img{width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-block:44px 56px}.medal{max-width:380px}}
+
+/* trust */
+.trust .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--rule)}
+.tr{display:flex;gap:14px;align-items:center;padding:24px 20px;border-left:1px solid var(--rule)}
+.tr:first-child{border-left:0;padding-left:0}
+.tr svg{width:30px;height:30px;flex:none;color:var(--gold)}
+.tr b{display:block;font:400 17px/1.25 var(--display)}
+.tr span{font-size:13px;color:var(--dim)}
+@media (max-width:900px){.trust .wrap{grid-template-columns:1fr 1fr}.tr{border-left:0;border-top:1px solid var(--rule);padding:18px 12px 18px 0}.tr:nth-child(-n+2){border-top:0}}
+
+section.blk{padding-block:96px}
+.head{text-align:center;display:grid;justify-items:center;gap:12px;margin-bottom:44px}
+.head h2{font-size:clamp(34px,4.6vw,58px)}
+.head .nast{font-size:24px;color:var(--gold);margin-top:-6px}
+.head p{color:var(--mist);max-width:40em;margin:0}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:18px}
+.cat{display:grid;justify-items:center;gap:10px;background:none;border:0;color:var(--ivory);cursor:pointer;padding:0;font:inherit;text-align:center}
+.cat .disc{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:1px solid var(--rule);transition:border-color .25s ease,transform .25s ease}
+.cat:hover .disc{border-color:var(--gold);transform:translateY(-3px)}
+.cat .disc svg,.cat .disc img{width:100%;height:100%;object-fit:cover}
+.cat b{font:400 16px/1.2 var(--display)}
+.cat span{font:400 13px/1.4 var(--fa);color:var(--gold);margin-top:-6px}
+@media (max-width:1000px){.cats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:480px){.cats{gap:12px}.cat b{font-size:14px}}
+
+/* signature spotlights */
+.sig{border-block:1px solid var(--rule);background:var(--lapis)}
+.sig .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.spot{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center;padding:56px 40px}
+.spot + .spot{border-left:1px solid var(--rule)}
+.spot img{width:200px;height:200px;object-fit:cover;border:1px solid var(--gold)}
+.spot h3{font-size:30px;margin:10px 0 2px}
+.spot .nast{font-size:20px;color:var(--gold);margin:0 0 8px}
+.spot p{color:var(--mist);margin:0 0 18px;font-size:15px}
+@media (max-width:1000px){.sig .wrap{grid-template-columns:1fr}.spot + .spot{border-left:0;border-top:1px solid var(--rule)}.spot{padding:40px 0}}
+@media (max-width:560px){.spot{grid-template-columns:1fr}.spot img{width:100%;height:auto;aspect-ratio:1;max-width:260px}}
+
+/* shop */
+.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 6px;margin-bottom:36px}
+.tab{font:500 13px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;border:1px solid transparent;background:none;color:var(--mist);cursor:pointer}
+.tab small{font-size:11px;color:var(--dim);margin-left:4px}
+.tab:hover{color:var(--ivory)}
+.tab[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:36px 22px}
+.card{display:flex;flex-direction:column}
+.card .pic{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--lapis);border:1px solid var(--rule)}
+.card .pic > svg,.card .pic > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.card:hover .pic > svg,.card:hover .pic > img{transform:scale(1.04)}
+.card .pic .kind{position:absolute;left:12px;bottom:12px;font:500 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--ivory);background:rgba(1,42,33,.75);padding:7px 9px}
+.badge{position:absolute;top:12px;left:12px;z-index:1;font:600 10px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:7px 9px;background:var(--ruby);color:#fff}
+.badge.gold{background:var(--gold);color:var(--night)}
+.badge.turq{background:var(--turq);color:var(--night)}
+.card .info{display:flex;flex-direction:column;gap:4px;padding-top:16px;flex:1}
+.card .code{font:500 11px/1 var(--body);letter-spacing:.14em;color:var(--dim)}
+.card h3{font-size:21px;line-height:1.2}
+.card .fa{font-size:14px;color:var(--gold);text-align:left;direction:rtl}
+.price{display:flex;align-items:baseline;gap:10px;margin-top:6px;font-variant-numeric:tabular-nums}
+.price .now{font:500 17px var(--body);color:var(--ivory)}
+.price s{color:var(--dim);font-size:14px}
+.price .off{font-size:12px;color:#E58AA0;font-weight:600}
+.price .por{font-size:14px;color:var(--mist)}
+.cardbtns{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:14px}
+.add,.ask{font:500 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:13px 12px;cursor:pointer;border:1px solid var(--gold)}
+.add{background:var(--gold);color:var(--night)}
+.add:hover{background:var(--ivory);border-color:var(--ivory)}
+.add[data-in]{background:transparent;color:var(--gold)}
+.ask{background:transparent;color:var(--gold)}
+.ask:hover{background:var(--gold);color:var(--night)}
+.ask.wide{grid-column:1/-1}
+.note{text-align:center;color:var(--dim);font-size:13px;margin-top:36px}
+
+/* crafts */
+.crafts{background:var(--lapis);border-block:1px solid var(--rule)}
+.craftrow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0}
+.craft{padding:30px 22px;border-left:1px solid var(--rule);text-align:center;display:grid;gap:6px;justify-items:center}
+.craft:first-child{border-left:0}
+.craft svg{width:64px;height:64px;margin-bottom:6px}
+.craft .nast{font-size:22px;color:var(--gold);line-height:1.9}
+.craft b{font:400 19px var(--display)}
+.craft p{margin:0;font-size:14px;color:var(--mist)}
+@media (max-width:1000px){.craftrow{grid-template-columns:1fr 1fr}.craft{border-left:0;border-top:1px solid var(--rule)}}
+
+/* sell */
+.sell .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.sell h2{font-size:clamp(34px,4.6vw,58px);margin:14px 0 10px}
+.sell p{color:var(--mist);max-width:32em}
+.steps{display:grid;gap:0;border-top:1px solid var(--rule)}
+.step{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.step i{font:400 30px/1 var(--display);font-style:normal;color:var(--gold)}
+.step b{display:block;font:400 21px var(--display);margin-bottom:2px}
+.step span{color:var(--mist);font-size:15px}
+@media (max-width:900px){.sell .wrap{grid-template-columns:1fr;gap:28px}}
+
+/* visit */
+.visit .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.vc{border:1px solid var(--rule);padding:30px;background:var(--lapis)}
+.vc .kicker{display:block;margin-bottom:14px}
+.vc .big{font:400 24px/1.3 var(--display);margin:0 0 14px;overflow-wrap:anywhere}
+.vc p{color:var(--mist);margin:0 0 12px;font-size:15px}
+.link{font:500 14px var(--body);color:var(--gold);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:900px){.visit .wrap{grid-template-columns:1fr}}
+
+footer{background:#011C16;color:var(--dim);font-size:14px;border-top:1px solid var(--rule)}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-block:56px 32px}
+footer h4{margin:0 0 14px;font:500 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ivory)}
+footer .logo{align-items:flex-start}
+footer p{max-width:26em;margin:12px 0 0}
+footer .legal{border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-block:20px;font-size:12px}
+.paymarks{display:flex;flex-wrap:wrap;gap:6px}
+.paymarks span{font:600 10px/1 var(--body);letter-spacing:.06em;padding:6px 8px;border:1px solid var(--rule);color:var(--mist)}
+@media (max-width:900px){footer .cols{grid-template-columns:1fr 1fr}}
+
+/* bag + checkout */
+.scrim{position:fixed;inset:0;background:rgba(1,20,15,.6);z-index:20}
+.bag{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);z-index:21;background:var(--lapis);border-left:1px solid var(--rule);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);padding-right:env(safe-area-inset-right,0px)}
+.baghead{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid var(--rule)}
+.baghead h3{font-size:28px}
+.x{font-size:28px;line-height:1;background:none;border:0;color:var(--ivory);cursor:pointer;padding:4px 8px}
+.bagbody{flex:1;overflow:auto;padding:6px 24px}
+.bline{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule)}
+.bline .th{width:64px;height:80px;overflow:hidden;position:relative;border:1px solid var(--rule)}
+.bline .th svg,.line .th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bline b{display:block;font:400 18px/1.25 var(--display)}
+.bline code{font:500 11px var(--body);letter-spacing:.12em;color:var(--dim)}
+.bline .amt{text-align:right;font-variant-numeric:tabular-nums}
+.bline .rm{display:block;margin-top:6px;font-size:12px;color:var(--mist);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.empty{padding:40px 0;color:var(--mist);text-align:center}
+.bagfoot{padding:20px 24px;border-top:1px solid var(--rule);display:grid;gap:12px}
+.bagfoot .row{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums}
+.bagfoot small{color:var(--dim)}
+dialog{border:1px solid var(--rule);background:var(--lapis);color:var(--ivory);padding:0}
+dialog::backdrop{background:rgba(1,20,15,.65)}
+.co{max-width:min(940px,calc(100vw - 24px));width:100%;max-height:calc(100dvh - 24px);overflow:auto}
+.cogrid{display:grid;grid-template-columns:1.2fr 1fr}
+.cofields{display:grid;gap:14px;padding:32px;align-content:start}
+.cofields h3,.cosum h3{font-size:28px}
+.cofields label{display:grid;gap:6px;font-size:13px;color:var(--mist)}
+.cofields input:not([type=radio]):not([type=checkbox]){font:15px var(--body);padding:12px;border:1px solid var(--rule);background:var(--night);color:var(--ivory);width:100%}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+fieldset{border:0;padding:0;margin:4px 0 0;display:grid;gap:8px}
+legend{font-size:13px;color:var(--mist);margin-bottom:6px}
+.opt{display:grid!important;grid-template-columns:auto 1fr auto;align-items:center;gap:12px!important;padding:14px;border:1px solid var(--rule);cursor:pointer}
+.opt:has(input:checked){border-color:var(--gold);background:rgba(242,208,113,.08)}
+.opt b{display:block;color:var(--ivory);font-weight:500}
+.opt em{font-style:normal;color:var(--ivory)}
+.check{display:flex!important;align-items:center;gap:10px}
+.cosum{background:var(--night);padding:32px;display:grid;gap:12px;align-content:start;border-left:1px solid var(--rule)}
+.ln{display:flex;justify-content:space-between;gap:12px;font-size:14px;font-variant-numeric:tabular-nums}
+.ln span:first-child{color:var(--mist)}
+.tot{border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:6px}
+.ln.big{font-size:18px}
+.ln.big span:first-child{color:var(--ivory)}
+.pay{width:100%}
+.paynote{margin:0;font-size:12px;color:var(--dim)}
+.sent{display:grid;gap:10px;padding:16px;border:1px solid var(--gold);background:rgba(242,208,113,.06)}
+.sent p{margin:0;font-size:14px;color:var(--mist)}
+.sent .row{display:flex;flex-wrap:wrap;gap:8px}
+.preview{font-size:13px;padding:12px;border:1px dashed var(--gold)}
+.dlg{display:grid;gap:14px;padding:30px;max-width:min(440px,calc(100vw - 32px))}
+.dlg h3{font-size:28px}
+.dlg p{margin:0;color:var(--mist)}
+.dlg .mail{font:400 21px var(--display);color:var(--ivory);overflow-wrap:anywhere}
+.dlglist{margin:0;padding:12px;border:1px solid var(--rule);background:var(--night);color:var(--ivory);font:13px/1.6 var(--body);white-space:pre-wrap}
+.dlg .row{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:760px){.cogrid{grid-template-columns:1fr}.cosum{border-left:0;border-top:1px solid var(--rule)}.cofields,.cosum{padding:22px}.f2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="wrap"><span>Persian gold &amp; accessories · <b>New and second-hand</b></span><span>231a Nether Street, London N3 1NT · 020 3930 0513</span></div></div>
+
+<header class="top">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#crafts">Persian crafts</a>
+      <a href="#sell">Sell your gold</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="logo" href="#home" aria-label="Karma Exchange home"><img src="img/logo.png" alt="Karma Exchange"></a>
+    <div class="hright">
+      <a class="visit" href="#visit">London N3</a>
+      <button class="bagbtn" type="button" id="bagOpen" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8 H19 L18 21 H6 Z M9 8 V6 a3 3 0 0 1 6 0 V8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span class="count" id="bagCount" data-zero>0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker">Karma Exchange · Persian jewellers in London</span>
+        <h1>Persian gold, <em>made to be passed down.</em></h1>
+        <p class="nast" lang="fa">اعتماد شما برکت کارما</p>
+        <p class="slogan-en">Your trust is Karma's blessing</p>
+        <p class="lede">Farsi name necklaces, Minakari enamel, Neyshabur turquoise, evil-eye pieces and full wedding sets. New and second-hand Persian jewellery and accessories, with secure online payment or collection from our shop in Finchley.</p>
+        <div class="ctas"><a class="btn" href="#shop">Shop the collection</a><a class="btn line" href="#sell">Sell your gold</a></div>
+      </div>
+      <div class="medal" aria-hidden="true"><canvas id="medal"></canvas><div class="fig"><img src="img/minakari.jpg" alt=""></div></div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Shopping with us">
+    <div class="wrap">
+      <div class="tr"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="14" width="20" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 14 V10 a6 6 0 0 1 12 0 V14" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><div><b>Secure online payment</b><span>Card, Apple Pay &amp; Google Pay</span></div></div>
+      <div class="tr"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 9 H19 V22 H3 Z M19 13 H25 L29 17 V22 H19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9" cy="24" r="2.5" fill="currentColor"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></svg><div><b>Insured UK delivery</b><span>Or free collection in store</span></div></div>
+      <div class="tr"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 13 L16 5 L28 13 M7 13 V27 H25 V13 M13 27 V19 H19 V27" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><div><b>Free click &amp; collect</b><span>Nether Street, London N3</span></div></div>
+      <div class="tr"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 L19 12 L28 12 L21 18 L24 27 L16 21 L8 27 L11 18 L4 12 L13 12 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><div><b>Made to order</b><span>Names, poems and custom pieces</span></div></div>
+    </div>
+  </section>
+
+  <section class="blk" id="cats-sec" aria-labelledby="catsTitle">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Shop by category</span>
+        <h2 id="catsTitle">The Persian treasury</h2>
+        <p class="nast" lang="fa">گنجینه جواهرات ایرانی</p>
+      </div>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <section class="sig" aria-label="Signature pieces">
+    <div class="wrap">
+      <div class="spot">
+        <img src="img/name-necklace.jpg" alt="Gold necklace with a name in Persian calligraphy">
+        <div>
+          <span class="kicker">Signature</span>
+          <h3>Farsi name necklaces</h3>
+          <p class="nast" lang="fa">گردنبند اسم</p>
+          <p>Any name or word in Persian calligraphy, cut in gold. A favourite for birthdays, Yalda and Nowruz.</p>
+          <button class="btn line" type="button" data-ask="KE-P01">Order yours</button>
+        </div>
+      </div>
+      <div class="spot">
+        <img src="img/minakari.jpg" alt="Round Minakari enamel pendant in blue and turquoise">
+        <div>
+          <span class="kicker">Isfahan craft</span>
+          <h3>Minakari enamel</h3>
+          <p class="nast" lang="fa">میناکاری</p>
+          <p>Hand-painted enamel from Isfahan in lapis blue and turquoise, set in gold-plated frames.</p>
+          <button class="btn line" type="button" data-ask="KE-P05">Ask about Minakari</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="shop" aria-labelledby="shopTitle">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">The collection</span>
+        <h2 id="shopTitle">Shop Karma Exchange</h2>
+        <p>Pieces in stock now, plus our Persian made-to-order range. Second-hand pieces are one of a kind, so each can only be bought once.</p>
+      </div>
+      <div class="tabs" role="group" aria-label="Filter the collection" id="tabs"></div>
+      <div class="grid" id="grid"></div>
+      <p class="note">Prices in GBP. Made-to-order prices depend on gold weight and are confirmed before you pay.</p>
+    </div>
+  </section>
+
+  <section class="crafts" id="crafts" aria-labelledby="craftsTitle">
+    <div class="wrap blk" style="padding-block:80px">
+      <div class="head">
+        <span class="kicker">Persian crafts</span>
+        <h2 id="craftsTitle">Five traditions, one shop</h2>
+      </div>
+      <div class="craftrow" id="craftrow"></div>
+    </div>
+  </section>
+
+  <section class="blk sell" id="sell" aria-labelledby="sellTitle">
+    <div class="wrap">
+      <div>
+        <span class="kicker">The exchange</span>
+        <h2 id="sellTitle">Sell or exchange your gold</h2>
+        <p class="nast" lang="fa" style="color:var(--gold);font-size:22px;margin:0 0 10px">خرید و فروش طلا</p>
+        <p>Karma Exchange buys as well as sells. Bring in jewellery you no longer wear, sell it for cash or put its value towards a new piece.</p>
+        <a class="btn" href="#visit" style="margin-top:12px">Bring your gold in</a>
+      </div>
+      <div class="steps">
+        <div class="step"><i>1</i><div><b>Bring it in</b><span>Visit us at 231a Nether Street with your gold or jewellery.</span></div></div>
+        <div class="step"><i>2</i><div><b>We value it</b><span>We check and weigh each piece in front of you.</span></div></div>
+        <div class="step"><i>3</i><div><b>Cash or exchange</b><span>Take the offer, or use it towards something new from the shop.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk visit" id="visit" aria-labelledby="visitTitle" style="padding-top:0">
+    <div class="head wrap" style="margin-bottom:36px">
+      <span class="kicker">Visit us</span>
+      <h2 id="visitTitle">Come and see the collection</h2>
+    </div>
+    <div class="wrap">
+      <div class="vc"><span class="kicker">The shop</span><p class="big">231a Nether Street<br>London N3 1NT</p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=231a+Nether+Street+London+N3+1NT" target="_blank" rel="noopener">Get directions</a></div>
+      <div class="vc"><span class="kicker">Email</span><p class="big" id="email">info@karmaexchange.co.uk</p><button class="link" type="button" id="copyEmail">Copy address</button></div>
+      <div class="vc"><span class="kicker">Call or WhatsApp</span><p class="big">020 3930 0513</p><p>WhatsApp +44 7729 390601<br>Monday to Friday, 9am to 6pm</p><a class="link" href="https://www.instagram.com/sarafikarma/" target="_blank" rel="noopener">Instagram @sarafikarma</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div><span class="logo"><img src="img/logo.png" alt="Karma Exchange" style="height:84px"></span><p class="nast" lang="fa" style="color:var(--gold);font-size:20px;margin:10px 0 0;text-align:left">اعتماد شما برکت کارما</p><p>Persian gold jewellery and accessories, new and second-hand, bought and sold in London.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="#shop">Necklaces</a></li><li><a href="#shop">Bracelets &amp; Alangoo</a></li><li><a href="#shop">Earrings</a></li><li><a href="#shop">Sets</a></li><li><a href="#shop">Made to order</a></li></ul></div>
+    <div><h4>Help</h4><ul><li><a href="#visit">Delivery &amp; collection</a></li><li><a href="#sell">Sell your gold</a></li><li><a href="#visit">Contact us</a></li></ul></div>
+    <div><h4>Visit</h4><ul><li>231a Nether Street, London N3 1NT</li><li>Mon to Fri, 9am to 6pm</li><li>020 3930 0513</li><li>info@karmaexchange.co.uk</li><li><a href="https://www.instagram.com/sarafikarma/" target="_blank" rel="noopener">Instagram</a> · <a href="https://t.me/sarafiKarma" target="_blank" rel="noopener">Telegram</a></li></ul></div>
+  </div>
+  <div class="wrap legal"><span>© Karma Exchange</span><div class="paymarks" data-online><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Apple Pay</span><span>Google Pay</span></div></div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="bag" id="bag" aria-label="Shopping bag" hidden>
+  <div class="baghead"><h3>Your bag</h3><button class="x" type="button" id="bagClose" aria-label="Close bag">×</button></div>
+  <div class="bagbody" id="bagBody"></div>
+  <div class="bagfoot" id="bagFoot"></div>
+</aside>
+
+<dialog id="checkout" class="co">
+  <form class="cogrid" id="coForm">
+    <div class="cofields">
+      <span class="kicker">Secure checkout</span>
+      <h3>Delivery details</h3>
+      <div class="f2">
+        <label for="coName">Full name<input id="coName" autocomplete="name" required></label>
+        <label for="coEmail">Email<input id="coEmail" type="email" autocomplete="email" required></label>
+      </div>
+      <label for="coPhone">Phone<input id="coPhone" type="tel" autocomplete="tel"></label>
+      <fieldset>
+        <legend>How would you like to receive your order?</legend>
+        <label class="opt"><input type="radio" name="ship" id="shipCollect" value="collect" checked><span><b>Click &amp; collect</b>231a Nether Street, London N3 1NT</span><em>Free</em></label>
+        <label class="opt"><input type="radio" name="ship" id="shipUK" value="uk"><span><b>Insured UK delivery</b>Tracked and signed for</span><em>£15.00</em></label>
+      </fieldset>
+      <div id="addr" hidden>
+        <label for="coAddr">Address<input id="coAddr" autocomplete="street-address"></label>
+        <div class="f2"><label for="coCity">Town or city<input id="coCity" autocomplete="address-level2"></label><label for="coPost">Postcode<input id="coPost" autocomplete="postal-code"></label></div>
+      </div>
+      <label class="check"><input type="checkbox" id="coGift"> Gift wrap in a Termeh pouch with a handwritten card</label>
+    </div>
+    <div class="cosum">
+      <h3>Order summary</h3>
+      <div id="coLines"></div>
+      <div class="tot" id="coTot"></div>
+      <button class="btn pay" type="submit">Place order</button>
+      <p class="paynote">After you place your order we check every piece, then send you a secure payment link for card, Apple Pay or Google Pay. Your piece is held for you while you pay.</p>
+      <div class="paymarks"><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Apple Pay</span><span>Google Pay</span></div>
+      <div class="sent" id="coSent" hidden>
+        <b>Last step: send us your order</b>
+        <p>Send this order by email or WhatsApp. We'll confirm the pieces are in stock and reply with your secure payment link, usually the same working day. Nothing has been charged yet.</p>
+        <pre class="dlglist" id="coOrder"></pre>
+        <div class="row"><a class="btn" id="coMail" href="#">Send by email</a><a class="btn line" id="coWa" href="#" target="_blank" rel="noopener">Send by WhatsApp</a></div>
+        <button class="link" type="button" id="coCopy">Copy order</button>
+      </div>
+      <button class="link" type="button" id="coClose">Back to shop</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="enquiry">
+  <form method="dialog" class="dlg">
+    <span class="kicker" id="dlgKick">Ask about this piece</span>
+    <h3 id="dlgName">Piece</h3>
+    <p id="dlgText"></p>
+    <p class="mail" id="dlgMail">info@karmaexchange.co.uk</p>
+    <p id="dlgPhone">Or call 020 3930 0513 · WhatsApp +44 7729 390601</p>
+    <pre class="dlglist" id="dlgList" hidden></pre>
+    <div class="row"><button class="btn" type="button" id="dlgCopy">Copy email</button><button class="btn line" value="close">Close</button></div>
+  </form>
+</dialog>
+
+<script>
+const W = id => `https://static.wixstatic.com/media/38f36c_${id}~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85/p.jpg`;
+/* stone colours used by the generated medallions */
+const STONE = {gold:"#D7B46A", turq:"#3FB3A7", lapis:"#2E54B8", ruby:"#B53A52", emerald:"#2E9A6B", amethyst:"#8E5BC4", pearl:"#E9E4D8"};
+const items = [
+  {code:"AAB-158",name:"Cheshm Nazar necklace",fa:"گردنبند چشم نظر",cat:"necklace",tags:["eye"],stone:"lapis",was:740,now:592,img:W("69f41db50ddb4f3db056f6323e6847c1")},
+  {code:"AAB-131",name:"Lock and Key necklace",fa:"گردنبند قفل و کلید",cat:"necklace",stone:"gold",now:420,img:W("23c798cb4604476684a094e5bb07817b")},
+  {code:"AAB-66",name:"Ballerina necklace",fa:"گردنبند بالرین",cat:"necklace",stone:"pearl",now:440,img:W("07044408682f411f833bf4feddd9e93c")},
+  {code:"S1AAB-13-1",name:"Key necklace",fa:"گردنبند کلید",cat:"necklace",stone:"gold",was:365,now:328.5,img:W("6ff89b335cdd49db91a0b73bafeb5dee")},
+  {code:"S1AAB-5-1",name:"Peacock necklace",fa:"گردنبند طاووس",cat:"necklace",stone:"turq",now:349,img:W("1e39d2bd78044a93829fa162c56e8bef")},
+  {code:"AAD-66",name:"Beaded chain bracelet",fa:"دستبند زنجیری",cat:"bracelet",stone:"gold",was:570,now:399,img:W("21d18c6d139640228592fa82747c1900")},
+  {code:"AAC-592",name:"Dangling earrings",fa:"گوشواره آویز",cat:"earrings",stone:"pearl",now:210,img:W("8fadb6c884d441ada0c70491314fd4b9")},
+  {code:"AAC-52",name:"Stud earrings set",fa:"ست گوشواره",cat:"earrings",stone:"emerald",was:135,now:121.5,img:W("c50c9b6836114cd1988c8f2363549ec1")},
+  {code:"AAC-58",name:"Stud earrings",fa:"گوشواره میخی",cat:"earrings",stone:"ruby",was:120,now:114,img:W("17ab5e65d9d944fb9a9401e47c091e6f")},
+  {code:"AAA-133",name:"Zhoping herringbone half set",fa:"نیم ست جوپینگ",cat:"set",stone:"gold",was:5200,now:3900,img:W("e6394fc595464c5aa127be7ea36cb8bb")},
+  {code:"AAA-103",name:"Zhoping flower half set",fa:"نیم ست گل",cat:"set",stone:"ruby",now:1299,img:W("4ba08a0cf1604858ae4a437293b21f87")},
+  {code:"AAA-108",name:"Zhoping leaf half set",fa:"نیم ست برگ",cat:"set",stone:"emerald",was:700,now:630,img:W("a03f6351a85b487daa7e884706fde942")},
+  {code:"AAA-105",name:"Zhoping heart half set",fa:"نیم ست قلب",cat:"set",stone:"ruby",was:999,now:899.1,img:W("b96c20d9c5ae4107a28470d5508a5dea")},
+  {code:"AAA-60",name:"Zhoping Amalia half set",fa:"نیم ست آمالیا",cat:"set",stone:"pearl",was:1550,now:1395,img:W("2d3a722560024aa59cc364d360c1a638")},
+  {code:"AAA-111",name:"Zhoping heart set",fa:"سرویس قلب",cat:"set",stone:"ruby",was:2990,now:1495,img:W("0a8ab85d2cf24b44a39522a02bc69769")},
+  {code:"AAA-114",name:"Zhoping set",fa:"سرویس جوپینگ",cat:"set",stone:"gold",now:999,badge:"New",img:W("26a215d336414978b174264c179f5575")},
+  {code:"AAA-54",name:"V.S.X butterfly set",fa:"سرویس پروانه",cat:"set",stone:"turq",was:2670,now:1602,img:W("c5315c872c2d4d48a806e412d44a02c0")},
+  {code:"AAA-53",name:"V.S.X butterfly set",fa:"سرویس پروانه",cat:"set",stone:"lapis",now:899,badge:"Best seller",img:W("a2ef9b2fb5d64eca847d1b9ac9558cb6")},
+  {code:"AAA-55",name:"V.S.X butterfly set, classic",fa:"سرویس پروانه کلاسیک",cat:"set",stone:"emerald",was:1890,now:1701,img:W("d79c3f5b874e4754a4557a020994c89b")},
+  {code:"AAA-119",name:"Amethyst jewellery set",fa:"سرویس آمتیست",cat:"set",stone:"amethyst",was:3899,now:3509.1,img:W("f3f4295b11c347dba1526f053ee8586a")},
+  /* Persian made-to-order range: price confirmed on enquiry */
+  {code:"KE-P01",name:"Farsi name necklace",fa:"گردنبند اسم فارسی",cat:"persian",tags:["name"],stone:"gold",por:true,photo:"img/name-necklace.jpg"},
+  {code:"KE-P02",name:"Farsi name bracelet",fa:"دستبند اسم",cat:"persian",tags:["name"],stone:"gold",por:true},
+  {code:"KE-P03",name:"Alangoo bangles",fa:"النگو",cat:"persian",tags:["bracelet"],stone:"gold",por:true},
+  {code:"KE-P04",name:"Van Yakad pendant",fa:"وان یکاد",cat:"persian",stone:"pearl",por:true},
+  {code:"KE-P05",name:"Minakari enamel pendant",fa:"میناکاری",cat:"persian",stone:"lapis",por:true,photo:"img/minakari.jpg"},
+  {code:"KE-P06",name:"Neyshabur turquoise ring",fa:"انگشتر فیروزه",cat:"persian",tags:["ring"],stone:"turq",por:true},
+  {code:"KE-P07",name:"Faravahar pendant",fa:"فروهر",cat:"persian",stone:"gold",por:true},
+  {code:"KE-P08",name:"Hafez poetry pendant",fa:"گردنبند شعر حافظ",cat:"persian",stone:"gold",por:true},
+  {code:"KE-P09",name:"Eshgh calligraphy necklace",fa:"گردنبند عشق",cat:"persian",tags:["name"],stone:"ruby",por:true},
+  {code:"KE-P10",name:"Evil-eye bracelet",fa:"دستبند چشم نظر",cat:"persian",tags:["eye","bracelet"],stone:"lapis",por:true},
+  {code:"KE-P11",name:"Gold coin pendant",fa:"آویز سکه طلا",cat:"persian",stone:"gold",por:true},
+  {code:"KE-P12",name:"Men's agate signet ring",fa:"انگشتر عقیق مردانه",cat:"persian",tags:["ring","men"],stone:"ruby",por:true},
+  {code:"KE-P13",name:"Persian bridal set",fa:"سرویس عروس",cat:"persian",tags:["set"],stone:"turq",por:true},
+  {code:"KE-A01",name:"Khatam jewellery box",fa:"جعبه خاتم",cat:"accessories",stone:"gold",por:true},
+  {code:"KE-A02",name:"Termeh silk pouch",fa:"کیسه ترمه",cat:"accessories",stone:"ruby",por:true},
+  {code:"KE-A03",name:"Ghalamkar scarf",fa:"روسری قلمکار",cat:"accessories",stone:"emerald",por:true},
+  {code:"KE-A04",name:"Shamseh scarf pin",fa:"سنجاق روسری",cat:"accessories",stone:"turq",por:true},
+  {code:"KE-A05",name:"Evil-eye keyring",fa:"جاکلیدی چشم نظر",cat:"accessories",tags:["eye"],stone:"lapis",por:true},
+  {code:"KE-A06",name:"Gold anklet",fa:"پابند طلا",cat:"accessories",stone:"gold",por:true},
+  {code:"KE-A07",name:"Farsi numeral watch",fa:"ساعت با اعداد فارسی",cat:"accessories",stone:"pearl",por:true}
+];
+const TABS = {all:"All",necklace:"Necklaces",bracelet:"Bracelets",earrings:"Earrings",set:"Sets",persian:"Persian made to order",accessories:"Accessories"};
+const KIND = {necklace:"Necklace",bracelet:"Bracelet",earrings:"Earrings",set:"Jewellery set",persian:"Made to order",accessories:"Accessory"};
+
+/* deterministic generated medallion per product, so no two cards look alike */
+function hash(s){ let h = 2166136261; for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; }
+function starPath(cx, cy, n, R, r, rot){
+  let d = ""; for (let i = 0; i < n*2; i++){ const a = rot + i*Math.PI/n, rad = i%2 ? r : R; d += (i ? "L" : "M") + (cx + rad*Math.cos(a)).toFixed(2) + " " + (cy + rad*Math.sin(a)).toFixed(2); }
+  return d + "Z";
+}
+function medallion(code, stone, shape){
+  const h = hash(code), n = [6,8,10,12,16][h % 5], rot = (h >> 3) % 360 * Math.PI/180, gem = STONE[stone] || STONE.gold;
+  const tall = shape !== "disc", W = 200, H = tall ? 250 : 200, cx = W/2, cy = H/2, id = "m" + h.toString(36);
+  const bgN = [6,8][(h >> 5) % 2], bgS = 34 + (h >> 7) % 10;
+  let petals = ""; for (let i = 0; i < n; i++){ const a = rot + i*2*Math.PI/n; petals += `<ellipse cx="${(cx + 46*Math.cos(a)).toFixed(1)}" cy="${(cy + 46*Math.sin(a)).toFixed(1)}" rx="7" ry="3.2" transform="rotate(${(a*180/Math.PI).toFixed(1)} ${(cx + 46*Math.cos(a)).toFixed(1)} ${(cy + 46*Math.sin(a)).toFixed(1)})" fill="${gem}" opacity=".9"/>`; }
+  let dots = ""; for (let i = 0; i < n*2; i++){ const a = rot + i*Math.PI/n; dots += `<circle cx="${(cx + 66*Math.cos(a)).toFixed(1)}" cy="${(cy + 66*Math.sin(a)).toFixed(1)}" r="1.8" fill="#F2D071"/>`; }
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <radialGradient id="${id}b" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0B5E4A"/><stop offset="1" stop-color="#012A21"/></radialGradient>
+      <linearGradient id="${id}g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBE7A6"/><stop offset=".5" stop-color="#D2AA55"/><stop offset="1" stop-color="#97722C"/></linearGradient>
+      <pattern id="${id}p" width="${bgS}" height="${bgS}" patternUnits="userSpaceOnUse"><path d="${starPath(bgS/2, bgS/2, bgN, bgS*.36, bgS*.18, 0)}" fill="none" stroke="#F2D071" stroke-width=".6" opacity=".22"/></pattern>
+    </defs>
+    <rect width="${W}" height="${H}" fill="url(#${id}b)"/><rect width="${W}" height="${H}" fill="url(#${id}p)"/>
+    <circle cx="${cx}" cy="${cy}" r="72" fill="none" stroke="url(#${id}g)" stroke-width="1.2"/>
+    ${dots}
+    <path d="${starPath(cx, cy, n, 60, 40, rot)}" fill="none" stroke="url(#${id}g)" stroke-width="1.6"/>
+    <path d="${starPath(cx, cy, n, 40, 26, rot + Math.PI/n)}" fill="url(#${id}g)" opacity=".18"/>
+    <path d="${starPath(cx, cy, n, 40, 26, rot + Math.PI/n)}" fill="none" stroke="url(#${id}g)" stroke-width="1.2"/>
+    ${petals}
+    <circle cx="${cx}" cy="${cy}" r="15" fill="${gem}" stroke="url(#${id}g)" stroke-width="3"/>
+    <circle cx="${cx - 4}" cy="${cy - 5}" r="4" fill="#fff" opacity=".35"/>
+  </svg>`;
+}
+/* real product photo when hosted; falls back to the medallion where the image can't load */
+const pic = (i, shape) => medallion(i.code, i.stone, shape) + (i.photo ? `<img src="${i.photo}" alt="${i.name}">` : i.img ? `<img src="${i.img}" alt="${i.name}" loading="lazy" onerror="this.remove()">` : "");
+const gbp = n => "£" + n.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2});
+const byCode = c => items.find(i => i.code === c);
+
+/* categories */
+const CATS = [
+  {k:"necklace",en:"Necklaces",fa:"گردنبند",code:"cat-n",stone:"gold"},
+  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq"},
+  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby"},
+  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald"},
+  {k:"persian",en:"Name jewellery",fa:"اسم فارسی",code:"cat-name",stone:"gold",photo:"img/name-necklace.jpg"},
+  {k:"persian",en:"Minakari",fa:"میناکاری",code:"cat-m",stone:"lapis",photo:"img/minakari.jpg"},
+  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis"},
+  {k:"accessories",en:"Accessories",fa:"اکسسوری",code:"cat-a",stone:"amethyst"}
+];
+document.getElementById("cats").innerHTML = CATS.map(c => `<button class="cat" type="button" data-k="${c.k}"><span class="disc">${c.photo ? `<img src="${c.photo}" alt="">` : medallion(c.code, c.stone, "disc")}</span><b>${c.en}</b><span lang="fa">${c.fa}</span></button>`).join("");
+document.getElementById("cats").addEventListener("click", e => { const b = e.target.closest(".cat"); if (!b) return; current = b.dataset.k; render(); document.getElementById("shop").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); });
+
+/* crafts */
+const CRAFTS = [
+  {fa:"قلمزنی",en:"Ghalamzani",d:"Patterns hand-chased into silver and gold.",s:"gold"},
+  {fa:"فیروزه کوبی",en:"Firoozeh Koobi",d:"Tiny turquoise stones set close into metal.",s:"turq"},
+  {fa:"میناکاری",en:"Minakari",d:"Isfahan enamel, painted and fired by hand.",s:"lapis"},
+  {fa:"خاتم کاری",en:"Khatam",d:"Star-pattern inlay of wood, bone and brass.",s:"pearl"},
+  {fa:"ملیله",en:"Malileh",d:"Fine silver filigree twisted into lace.",s:"emerald"}
+];
+document.getElementById("craftrow").innerHTML = CRAFTS.map((c,i) => `<div class="craft"><span style="width:64px;height:64px;border-radius:50%;overflow:hidden;display:block;border:1px solid var(--rule)">${medallion("craft"+i, c.s, "disc")}</span><span class="nast" lang="fa">${c.fa}</span><b>${c.en}</b><p>${c.d}</p></div>`).join("");
+
+/* shop grid */
+const grid = document.getElementById("grid"), tabs = document.getElementById("tabs");
+let current = "all";
+let bag = [];
+try { bag = JSON.parse(localStorage.getItem("ke-bag2") || "[]").filter(c => byCode(c) && !byCode(c).por); } catch(e){ bag = []; }
+const saveBag = () => { try { localStorage.setItem("ke-bag2", JSON.stringify(bag)); } catch(e){} };
+const inBag = c => bag.includes(c);
+function render(){
+  tabs.innerHTML = Object.entries(TABS).map(([k,v]) => { const n = k === "all" ? items.length : items.filter(i => i.cat === k).length; return `<button class="tab" type="button" data-k="${k}" aria-pressed="${k===current}">${v}<small>${n}</small></button>`; }).join("");
+  grid.innerHTML = items.filter(i => current === "all" || i.cat === current).map(i => {
+    const off = i.was ? Math.round((1 - i.now/i.was)*100) : 0;
+    const badge = i.badge ? `<span class="badge gold">${i.badge}</span>` : i.was ? `<span class="badge">Sale</span>` : i.por ? `<span class="badge turq">Made to order</span>` : "";
+    const price = i.por ? `<span class="por">Price on request</span>` : `<span class="now">${gbp(i.now)}</span>${i.was ? `<s>${gbp(i.was)}</s><span class="off">−${off}%</span>` : ""}`;
+    const btns = i.por ? `<button class="ask wide" type="button" data-ask="${i.code}">Enquire</button>` : `<button class="add" type="button" data-code="${i.code}" ${inBag(i.code) ? "data-in" : ""}>${inBag(i.code) ? "In your bag" : "Add to bag"}</button><button class="ask" type="button" data-ask="${i.code}" aria-label="Ask about ${i.name}">Ask</button>`;
+    return `<article class="card"><div class="pic">${badge}${pic(i)}<span class="kind">${KIND[i.cat]}</span></div><div class="info"><span class="code">${i.code}</span><h3>${i.name}</h3><span class="fa" lang="fa">${i.fa}</span><div class="price">${price}</div><div class="cardbtns">${btns}</div></div></article>`;
+  }).join("");
+}
+tabs.addEventListener("click", e => { const b = e.target.closest(".tab"); if (!b) return; current = b.dataset.k; render(); });
+render();
+
+/* bag */
+/* Checkout is on. Until Stripe is connected, "Place order" hands the customer a ready order to send by email or WhatsApp, and the shop replies with a payment link. Set to false to turn the bag into a reservation list instead. */
+const ONLINE_CHECKOUT = true;
+if (!ONLINE_CHECKOUT) document.querySelectorAll("[data-online]").forEach(el => el.hidden = true);
+const SHIP_UK = 15;
+const bagTotal = () => bag.reduce((t,c) => t + byCode(c).now, 0);
+function renderBag(){
+  const n = bag.length, cnt = document.getElementById("bagCount");
+  cnt.textContent = n; n ? cnt.removeAttribute("data-zero") : cnt.setAttribute("data-zero","");
+  document.getElementById("bagBody").innerHTML = n ? bag.map(c => { const i = byCode(c); return `<div class="bline"><div class="th">${pic(i)}</div><div><b>${i.name}</b><code>${i.code}</code><button class="rm" type="button" data-code="${c}">Remove</button></div><div class="amt">${gbp(i.now)}</div></div>`; }).join("") : `<p class="empty">Your bag is empty.<br>Add a piece from the collection to get started.</p>`;
+  const save = bag.reduce((t,c) => t + ((byCode(c).was || byCode(c).now) - byCode(c).now), 0);
+  document.getElementById("bagFoot").innerHTML = n ? `<div class="row"><span>Subtotal (${n} piece${n>1?"s":""})</span><span>${gbp(bagTotal())}</span></div>${save ? `<div class="row"><small>You save</small><small>${gbp(save)}</small></div>` : ""}${ONLINE_CHECKOUT ? `<small>Delivery or free click &amp; collect chosen at checkout.</small><button class="btn" type="button" id="toCheckout" style="width:100%">Checkout securely</button>` : `<small>Online payment is coming soon. Send us your list and we'll reserve these pieces for you to see and pay for in store.</small><button class="btn" type="button" id="toReserve" style="width:100%">Reserve these pieces</button>`}` : `<a class="btn line" href="#shop" id="bagShop" style="width:100%">Shop the collection</a>`;
+}
+function openBag(){ renderBag(); document.getElementById("bag").hidden = false; document.getElementById("scrim").hidden = false; document.getElementById("bagClose").focus(); }
+function closeBag(){ document.getElementById("bag").hidden = true; document.getElementById("scrim").hidden = true; }
+document.getElementById("bagOpen").addEventListener("click", openBag);
+document.getElementById("bagClose").addEventListener("click", closeBag);
+document.getElementById("scrim").addEventListener("click", closeBag);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeBag(); });
+document.getElementById("bag").addEventListener("click", e => {
+  const rm = e.target.closest(".rm");
+  if (rm){ bag = bag.filter(c => c !== rm.dataset.code); saveBag(); renderBag(); render(); return; }
+  if (e.target.closest("#bagShop")) closeBag();
+  if (e.target.closest("#toCheckout")){ closeBag(); openCheckout(); }
+  if (e.target.closest("#toReserve")){ closeBag(); openReserve(); }
+});
+grid.addEventListener("click", e => {
+  const b = e.target.closest(".add"); if (!b) return;
+  if (!inBag(b.dataset.code)){ bag.push(b.dataset.code); saveBag(); }
+  render(); openBag();
+});
+
+/* checkout */
+const co = document.getElementById("checkout");
+function renderSummary(){
+  const uk = document.getElementById("shipUK").checked, gift = document.getElementById("coGift").checked;
+  document.getElementById("addr").hidden = !uk;
+  ["coAddr","coCity","coPost"].forEach(id => document.getElementById(id).required = uk);
+  document.getElementById("coLines").innerHTML = bag.map(c => { const i = byCode(c); return `<div class="ln"><span>${i.name} · ${i.code}</span><span>${gbp(i.now)}</span></div>`; }).join("");
+  const ship = uk ? SHIP_UK : 0;
+  document.getElementById("coTot").innerHTML = `<div class="ln"><span>Subtotal</span><span>${gbp(bagTotal())}</span></div><div class="ln"><span>${uk ? "Insured UK delivery" : "Click &amp; collect"}</span><span>${ship ? gbp(ship) : "Free"}</span></div>${gift ? `<div class="ln"><span>Gift wrap</span><span>Free</span></div>` : ""}<div class="ln big"><span>Total</span><span>${gbp(bagTotal() + ship)}</span></div>`;
+}
+function openCheckout(){ document.getElementById("coSent").hidden = true; renderSummary(); co.showModal ? co.showModal() : co.setAttribute("open",""); }
+document.getElementById("coForm").addEventListener("change", renderSummary);
+document.getElementById("coForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim(), uk = document.getElementById("shipUK").checked;
+  const ship = uk ? SHIP_UK : 0;
+  const text = [
+    "New order for Karma Exchange",
+    ...bag.map(c => { const i = byCode(c); return `${i.code}  ${i.name}  ${gbp(i.now)}`; }),
+    uk ? `Insured UK delivery  ${gbp(SHIP_UK)}` : "Click & collect at 231a Nether Street  Free",
+    document.getElementById("coGift").checked ? "Gift wrap: yes" : "",
+    `Total: ${gbp(bagTotal() + ship)}`,
+    "",
+    `Name: ${v("coName")}`, `Email: ${v("coEmail")}`, v("coPhone") ? `Phone: ${v("coPhone")}` : "",
+    uk ? `Address: ${v("coAddr")}, ${v("coCity")}, ${v("coPost")}` : ""
+  ].filter(Boolean).join("\n");
+  document.getElementById("coOrder").textContent = text;
+  document.getElementById("coMail").href = "mailto:info@karmaexchange.co.uk?subject=" + encodeURIComponent("Order: " + bag.join(", ")) + "&body=" + encodeURIComponent(text);
+  document.getElementById("coWa").href = "https://wa.me/447729390601?text=" + encodeURIComponent(text);
+  document.getElementById("coSent").hidden = false;
+  document.getElementById("coSent").scrollIntoView({block:"nearest"});
+});
+document.getElementById("coCopy").addEventListener("click", e => copyFrom(document.getElementById("coOrder"), e.currentTarget, "Copy order"));
+document.getElementById("coClose").addEventListener("click", () => co.close());
+
+function openReserve(){
+  document.getElementById("dlgKick").textContent = "Reserve your pieces";
+  document.getElementById("dlgName").textContent = `${bag.length} piece${bag.length>1?"s":""} to reserve`;
+  document.getElementById("dlgText").textContent = "Copy this list into an email or WhatsApp message to us. We'll confirm the pieces are in stock and hold them for you.";
+  const list = document.getElementById("dlgList");
+  list.textContent = bag.map(c => { const i = byCode(c); return `${i.code}  ${i.name}  ${gbp(i.now)}`; }).join("\n") + `\nTotal: ${gbp(bagTotal())}`;
+  list.hidden = false;
+  document.getElementById("dlgCopy").textContent = "Copy list";
+  dlg.showModal ? dlg.showModal() : dlg.setAttribute("open","");
+}
+/* enquiries */
+const dlg = document.getElementById("enquiry");
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-ask]"); if (!b) return;
+  const i = byCode(b.dataset.ask);
+  document.getElementById("dlgList").hidden = true;
+  document.getElementById("dlgCopy").textContent = "Copy email";
+  document.getElementById("dlgKick").textContent = i.por ? "Made to order" : "Ask about this piece";
+  document.getElementById("dlgName").textContent = i.name;
+  document.getElementById("dlgText").textContent = i.por
+    ? `Email us with code ${i.code}, the name or words you'd like, and your preferred gold. We'll confirm the price and timing before you pay.`
+    : `Email us with code ${i.code} and we'll confirm it's in stock and answer any questions.`;
+  dlg.showModal ? dlg.showModal() : dlg.setAttribute("open","");
+});
+function copyFrom(el, btn, label){
+  const done = () => { btn.textContent = "Copied"; setTimeout(() => btn.textContent = label, 1600); };
+  const fallback = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected, press Ctrl+C"; };
+  try { navigator.clipboard.writeText(el.textContent).then(done, fallback); } catch(err){ fallback(); }
+}
+document.getElementById("copyEmail").addEventListener("click", e => copyFrom(document.getElementById("email"), e.currentTarget, "Copy address"));
+document.getElementById("dlgCopy").addEventListener("click", e => { const list = document.getElementById("dlgList"); copyFrom(list.hidden ? document.getElementById("dlgMail") : list, e.currentTarget, list.hidden ? "Copy email" : "Copy list"); });
+renderBag();
+
+/* hero: a slowly turning gold shamseh drawn on canvas */
+(function(){
+  const c = document.getElementById("medal"), box = c.parentElement, ctx = c.getContext("2d");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let w, dpr;
+  function size(){ dpr = Math.min(devicePixelRatio || 1, 2); w = box.clientWidth; c.width = c.height = w*dpr; }
+  function star(cx, cy, n, R, r, rot){ ctx.beginPath(); for (let i = 0; i < n*2; i++){ const a = rot + i*Math.PI/n, rad = i%2 ? r : R; ctx[i ? "lineTo" : "moveTo"](cx + rad*Math.cos(a), cy + rad*Math.sin(a)); } ctx.closePath(); }
+  function draw(t){
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,w,w);
+    const cx = w/2, cy = w/2, s = w/2, rot = reduce ? 0 : t/60000;
+    const g = ctx.createLinearGradient(0,0,w,w); g.addColorStop(0,"#FBE7A6"); g.addColorStop(.5,"#D2AA55"); g.addColorStop(1,"#97722C");
+    ctx.strokeStyle = g; ctx.fillStyle = g;
+    ctx.lineWidth = 1; ctx.globalAlpha = .5;
+    for (let k = 0; k < 3; k++){ ctx.beginPath(); ctx.arc(cx, cy, s*(.96 - k*.035), 0, Math.PI*2); ctx.stroke(); }
+    ctx.globalAlpha = 1; ctx.lineWidth = 1.4;
+    star(cx, cy, 16, s*.9, s*.66, rot); ctx.stroke();
+    star(cx, cy, 16, s*.78, s*.58, -rot*1.4 + Math.PI/16); ctx.stroke();
+    ctx.lineWidth = 1.1;
+    for (let i = 0; i < 16; i++){
+      const a = rot*1.4 + i*Math.PI/8, x = cx + s*.68*Math.cos(a), y = cy + s*.68*Math.sin(a);
+      ctx.save(); ctx.translate(x, y); ctx.rotate(a); ctx.beginPath(); ctx.ellipse(0,0,s*.07,s*.025,0,0,Math.PI*2);
+      ctx.fillStyle = i % 2 ? "#3FB3A7" : "#2E54B8"; ctx.globalAlpha = .85; ctx.fill(); ctx.globalAlpha = 1; ctx.stroke(); ctx.restore();
+    }
+    for (let i = 0; i < 64; i++){ const a = -rot + i*Math.PI/32; ctx.beginPath(); ctx.arc(cx + s*.93*Math.cos(a), cy + s*.93*Math.sin(a), Math.max(1, s*.008), 0, Math.PI*2); ctx.fillStyle = g; ctx.fill(); }
+    star(cx, cy, 8, s*.5, s*.36, -rot*2); ctx.stroke();
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  size(); addEventListener("resize", size); requestAnimationFrame(draw);
+})();
+</script>
+
+</body>
+</html>
