@@ -118,7 +118,9 @@ section.blk{padding-block:96px}
 .cat{display:grid;justify-items:center;gap:10px;background:none;border:0;color:var(--ivory);cursor:pointer;padding:0;font:inherit;text-align:center}
 .cat .disc{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:1px solid var(--rule);transition:border-color .25s ease,transform .25s ease}
 .cat:hover .disc{border-color:var(--gold);transform:translateY(-3px)}
+.cat .disc{position:relative}
 .cat .disc svg,.cat .disc img{width:100%;height:100%;object-fit:cover}
+.cat .disc img{position:absolute;inset:0}
 .cat b{font:400 16px/1.2 var(--display)}
 .cat span{font:400 13px/1.4 var(--fa);color:var(--gold);margin-top:-6px}
 @media (max-width:1000px){.cats{grid-template-columns:repeat(4,minmax(0,1fr))}}
@@ -558,16 +560,16 @@ const byCode = c => items.find(i => i.code === c);
 
 /* categories */
 const CATS = [
-  {k:"necklace",en:"Necklaces",fa:"گردنبند",code:"cat-n",stone:"gold"},
-  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq"},
-  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby"},
-  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald"},
+  {k:"necklace",en:"Necklaces",fa:"گردنبند",code:"cat-n",stone:"gold",photo:"img/cat-necklace.png"},
+  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq",from:"AAD-66"},
+  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby",from:"AAC-592"},
+  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald",from:"AAA-53"},
   {k:"persian",en:"Name jewellery",fa:"اسم فارسی",code:"cat-name",stone:"gold",photo:"img/name-necklace.jpg"},
   {k:"persian",en:"Minakari",fa:"میناکاری",code:"cat-m",stone:"lapis",photo:"img/minakari.jpg"},
-  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis"},
+  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis",from:"AAB-158"},
   {k:"accessories",en:"Accessories",fa:"اکسسوری",code:"cat-a",stone:"amethyst"}
 ];
-document.getElementById("cats").innerHTML = CATS.map(c => `<button class="cat" type="button" data-k="${c.k}"><span class="disc">${c.photo ? `<img src="${c.photo}" alt="">` : medallion(c.code, c.stone, "disc")}</span><b>${c.en}</b><span lang="fa">${c.fa}</span></button>`).join("");
+document.getElementById("cats").innerHTML = CATS.map(c => `<button class="cat" type="button" data-k="${c.k}"><span class="disc">${c.photo ? `<img src="${c.photo}" alt="">` : medallion(c.code, c.stone, "disc") + (c.from ? `<img src="${byCode(c.from).img}" alt="" loading="lazy" onerror="this.remove()">` : "")}</span><b>${c.en}</b><span lang="fa">${c.fa}</span></button>`).join("");
 document.getElementById("cats").addEventListener("click", e => { const b = e.target.closest(".cat"); if (!b) return; current = b.dataset.k; render(); document.getElementById("shop").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); });
 
 /* crafts */
