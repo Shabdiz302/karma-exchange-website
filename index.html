@@ -303,7 +303,7 @@ legend{font-size:13px;color:var(--mist);margin-bottom:6px}
         <p class="lede">Farsi name necklaces, Minakari enamel, Neyshabur turquoise, evil-eye pieces and full wedding sets. New and second-hand Persian jewellery and accessories, with secure online payment or collection from our shop in Finchley.</p>
         <div class="ctas"><a class="btn" href="#shop">Shop the collection</a><a class="btn line" href="#sell">Sell your gold</a></div>
       </div>
-      <div class="medal" aria-hidden="true"><canvas id="medal"></canvas><div class="fig"><img src="img/minakari.jpg" alt=""></div></div>
+      <div class="medal" aria-hidden="true"><canvas id="medal"></canvas><div class="fig"><img src="img/r-minakari-close.jpg" alt=""></div></div>
     </div>
   </section>
 
@@ -340,7 +340,7 @@ legend{font-size:13px;color:var(--mist);margin-bottom:6px}
         </div>
       </div>
       <div class="spot">
-        <img src="img/minakari.jpg" alt="Round Minakari enamel pendant in blue and turquoise">
+        <img src="img/r-minakari-close.jpg" alt="Oval Minakari enamel pendant in blue and turquoise">
         <div>
           <span class="kicker">Isfahan craft</span>
           <h3>Minakari enamel</h3>
@@ -499,12 +499,39 @@ const items = [
   {code:"AAA-53",name:"V.S.X butterfly set",fa:"سرویس پروانه",cat:"set",stone:"lapis",now:899,badge:"Best seller",img:W("a2ef9b2fb5d64eca847d1b9ac9558cb6")},
   {code:"AAA-55",name:"V.S.X butterfly set, classic",fa:"سرویس پروانه کلاسیک",cat:"set",stone:"emerald",was:1890,now:1701,img:W("d79c3f5b874e4754a4557a020994c89b")},
   {code:"AAA-119",name:"Amethyst jewellery set",fa:"سرویس آمتیست",cat:"set",stone:"amethyst",was:3899,now:3509.1,img:W("f3f4295b11c347dba1526f053ee8586a")},
+  /* Handmade Persian pieces in the shop: Reza's photos, price on request */
+  {code:"KE-H01",name:"Tulip collar necklace",fa:"گردنبند لاله",cat:"necklace",stone:"ruby",por:true,hand:true,photo:"img/r-tulip-collar.jpg"},
+  {code:"KE-H02",name:"Eslimi garnet pendant",fa:"آویز اسلیمی",cat:"necklace",stone:"ruby",por:true,hand:true,photo:"img/r-eslimi-garnet-pendant.jpg"},
+  {code:"KE-H03",name:"Lapis filigree necklace",fa:"گردنبند لاجورد",cat:"necklace",stone:"lapis",por:true,hand:true,photo:"img/r-lapis-filigree-necklace.jpg"},
+  {code:"KE-H04",name:"Bird drop pendant",fa:"آویز پرنده",cat:"necklace",stone:"turq",por:true,hand:true,photo:"img/r-bird-drop-pendant.jpg"},
+  {code:"KE-H05",name:"Turquoise drop pendant",fa:"آویز فیروزه",cat:"necklace",stone:"turq",por:true,hand:true,photo:"img/r-turquoise-drop-pendant.jpg"},
+  {code:"KE-H06",name:"Leaf cuff bracelet",fa:"دستبند برگ",cat:"bracelet",stone:"emerald",por:true,hand:true,photo:"img/r-bronze-leaf-cuff.jpg"},
+  {code:"KE-H07",name:"Lapis bird earrings",fa:"گوشواره پرنده لاجورد",cat:"earrings",stone:"lapis",por:true,hand:true,photo:"img/r-lapis-bird-earrings.jpg"},
+  {code:"KE-H08",name:"Rose and lapis pearl earrings",fa:"گوشواره گل سرخ",cat:"earrings",stone:"pearl",por:true,hand:true,photo:"img/r-rose-lapis-earrings.jpg"},
+  {code:"KE-H09",name:"Blue stone drop earrings",fa:"گوشواره سنگ آبی",cat:"earrings",stone:"lapis",por:true,hand:true,photo:"img/r-blue-drop-earrings.jpg"},
+  {code:"KE-H10",name:"Calligraphy leaf earrings",fa:"گوشواره خوشنویسی",cat:"earrings",stone:"gold",por:true,hand:true,photo:"img/r-calligraphy-leaf-earrings.jpg"},
+  {code:"KE-H11",name:"Filigree ear cuff",fa:"کاف گوش",cat:"earrings",stone:"pearl",por:true,hand:true,photo:"img/r-filigree-ear-cuff.jpg"},
+  {code:"KE-H12",name:"Pink tulip enamel earrings",fa:"گوشواره لاله صورتی",cat:"earrings",stone:"ruby",por:true,hand:true,photo:"img/r-pink-tulip-earrings.jpg"},
+  {code:"KE-H13",name:"Red tulip mirror earrings",fa:"گوشواره لاله آینه",cat:"earrings",stone:"ruby",por:true,hand:true,photo:"img/r-red-tulip-earrings.jpg"},
+  {code:"KE-H14",name:"Good thoughts, words, deeds ring",fa:"انگشتر پندار نیک",cat:"ring",stone:"turq",por:true,hand:true,photo:"img/r-pendar-ring.jpg"},
+  {code:"KE-H15",name:"Iran map turquoise ring",fa:"انگشتر نقشه ایران",cat:"ring",stone:"turq",por:true,hand:true,photo:"img/r-iran-map-ring.jpg"},
+  {code:"KE-H16",name:"Silver tulip ring",fa:"انگشتر لاله",cat:"ring",stone:"pearl",por:true,hand:true,photo:"img/r-tulip-ring.jpg"},
+  {code:"KE-H17",name:"Amber filigree ring",fa:"انگشتر کهربا",cat:"ring",stone:"gold",por:true,hand:true,photo:"img/r-amber-filigree-ring.jpg"},
+  {code:"KE-H18",name:"Carnelian paisley ring",fa:"انگشتر عقیق بته جقه",cat:"ring",stone:"ruby",por:true,hand:true,photo:"img/r-carnelian-paisley-ring.jpg"},
+  {code:"KE-H19",name:"Hammered garnet ring",fa:"انگشتر گارنت",cat:"ring",stone:"ruby",por:true,hand:true,photo:"img/r-hammered-garnet-ring.jpg"},
+  {code:"KE-H20",name:"Calligraphy cuff ring",fa:"انگشتر خوشنویسی",cat:"ring",stone:"gold",por:true,hand:true,photo:"img/r-calligraphy-cuff-ring.jpg"},
+  {code:"KE-H21",name:"Turquoise open rings",fa:"انگشتر فیروزه",cat:"ring",stone:"turq",por:true,hand:true,photo:"img/r-turquoise-open-rings.jpg"},
+  {code:"KE-H22",name:"Enamel bar rings",fa:"انگشتر میناکاری",cat:"ring",stone:"turq",por:true,hand:true,photo:"img/r-enamel-bar-rings.jpg"},
+  {code:"KE-H23",name:"Persian coin signet ring",fa:"انگشتر سکه",cat:"men",stone:"gold",por:true,hand:true,photo:"img/r-coin-rings.jpg"},
+  {code:"KE-H24",name:"Calligraphy tie bar",fa:"گیره کراوات خوشنویسی",cat:"men",stone:"gold",por:true,hand:true,photo:"img/r-calligraphy-tie-bar.jpg"},
+  {code:"KE-H25",name:"Golden bird brooch",fa:"سنجاق پرنده",cat:"accessories",stone:"gold",por:true,hand:true,photo:"img/r-bird-brooch.jpg"},
+  {code:"KE-H26",name:"Green enamel leaf brooch",fa:"سنجاق برگ",cat:"accessories",stone:"emerald",por:true,hand:true,photo:"img/r-green-leaf-brooch.jpg"},
   /* Persian made-to-order range: price confirmed on enquiry */
   {code:"KE-P01",name:"Farsi name necklace",fa:"گردنبند اسم فارسی",cat:"persian",tags:["name"],stone:"gold",por:true,photo:"img/name-necklace.jpg"},
   {code:"KE-P02",name:"Farsi name bracelet",fa:"دستبند اسم",cat:"persian",tags:["name"],stone:"gold",por:true,photo:"img/p-KE-P02.png"},
   {code:"KE-P03",name:"Alangoo bangles",fa:"النگو",cat:"persian",tags:["bracelet"],stone:"gold",por:true,photo:"img/p-KE-P03.png"},
   {code:"KE-P04",name:"Van Yakad pendant",fa:"وان یکاد",cat:"persian",stone:"pearl",por:true},
-  {code:"KE-P05",name:"Minakari enamel pendant",fa:"میناکاری",cat:"persian",stone:"lapis",por:true,photo:"img/minakari.jpg"},
+  {code:"KE-P05",name:"Minakari enamel pendant",fa:"میناکاری",cat:"persian",stone:"lapis",por:true,photo:"img/r-minakari-pendant.jpg"},
   {code:"KE-P06",name:"Neyshabur turquoise ring",fa:"انگشتر فیروزه",cat:"persian",tags:["ring"],stone:"turq",por:true,img:"https://images.unsplash.com/photo-1708176995581-adf048de7ebd?w=800"},
   {code:"KE-P07",name:"Faravahar pendant",fa:"فروهر",cat:"persian",stone:"gold",por:true},
   {code:"KE-P08",name:"Hafez poetry pendant",fa:"گردنبند شعر حافظ",cat:"persian",stone:"gold",por:true},
@@ -521,8 +548,8 @@ const items = [
   {code:"KE-A06",name:"Gold anklet",fa:"پابند طلا",cat:"accessories",stone:"gold",por:true,img:"https://images.unsplash.com/photo-1744722091259-ed1cf11ac97f?w=800"},
   {code:"KE-A07",name:"Farsi numeral watch",fa:"ساعت با اعداد فارسی",cat:"accessories",stone:"pearl",por:true,img:"https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?w=800"}
 ];
-const TABS = {all:"All",necklace:"Necklaces",bracelet:"Bracelets",earrings:"Earrings",set:"Sets",persian:"Persian made to order",accessories:"Accessories"};
-const KIND = {necklace:"Necklace",bracelet:"Bracelet",earrings:"Earrings",set:"Jewellery set",persian:"Made to order",accessories:"Accessory"};
+const TABS = {all:"All",necklace:"Necklaces",bracelet:"Bracelets",earrings:"Earrings",set:"Sets",ring:"Rings",men:"Men's",persian:"Persian made to order",accessories:"Accessories"};
+const KIND = {necklace:"Necklace",bracelet:"Bracelet",earrings:"Earrings",set:"Jewellery set",ring:"Ring",men:"Men's",persian:"Made to order",accessories:"Accessory"};
 
 /* deterministic generated medallion per product, so no two cards look alike */
 function hash(s){ let h = 2166136261; for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; }
@@ -593,7 +620,7 @@ function render(){
   tabs.innerHTML = Object.entries(TABS).map(([k,v]) => { const n = k === "all" ? items.length : items.filter(i => i.cat === k).length; return `<button class="tab" type="button" data-k="${k}" aria-pressed="${k===current}">${v}<small>${n}</small></button>`; }).join("");
   grid.innerHTML = items.filter(i => current === "all" || i.cat === current).map(i => {
     const off = i.was ? Math.round((1 - i.now/i.was)*100) : 0;
-    const badge = i.badge ? `<span class="badge gold">${i.badge}</span>` : i.was ? `<span class="badge">Sale</span>` : i.por ? `<span class="badge turq">Made to order</span>` : "";
+    const badge = i.badge ? `<span class="badge gold">${i.badge}</span>` : i.was ? `<span class="badge">Sale</span>` : i.hand ? `<span class="badge turq">Handmade</span>` : i.por ? `<span class="badge turq">Made to order</span>` : "";
     const price = i.por ? `<span class="por">Price on request</span>` : `<span class="now">${gbp(i.now)}</span>${i.was ? `<s>${gbp(i.was)}</s><span class="off">−${off}%</span>` : ""}`;
     const btns = i.por ? `<button class="ask wide" type="button" data-ask="${i.code}">Enquire</button>` : `<button class="add" type="button" data-code="${i.code}" ${inBag(i.code) ? "data-in" : ""}>${inBag(i.code) ? "In your bag" : "Add to bag"}</button><button class="ask" type="button" data-ask="${i.code}" aria-label="Ask about ${i.name}">Ask</button>`;
     return `<article class="card"><div class="pic">${badge}${pic(i)}<span class="kind">${KIND[i.cat]}</span></div><div class="info"><span class="code">${i.code}</span><h3>${i.name}</h3><span class="fa" lang="fa">${i.fa}</span><div class="price">${price}</div><div class="cardbtns">${btns}</div></div></article>`;
@@ -686,9 +713,11 @@ document.addEventListener("click", e => {
   const i = byCode(b.dataset.ask);
   document.getElementById("dlgList").hidden = true;
   document.getElementById("dlgCopy").textContent = "Copy email";
-  document.getElementById("dlgKick").textContent = i.por ? "Made to order" : "Ask about this piece";
+  document.getElementById("dlgKick").textContent = i.por && !i.hand ? "Made to order" : "Ask about this piece";
   document.getElementById("dlgName").textContent = i.name;
-  document.getElementById("dlgText").textContent = i.por
+  document.getElementById("dlgText").textContent = i.hand
+    ? `Email us with code ${i.code} and we'll confirm the price and that it's in stock.`
+    : i.por
     ? `Email us with code ${i.code}, the name or words you'd like, and your preferred gold. We'll confirm the price and timing before you pay.`
     : `Email us with code ${i.code} and we'll confirm it's in stock and answer any questions.`;
   dlg.showModal ? dlg.showModal() : dlg.setAttribute("open","");
