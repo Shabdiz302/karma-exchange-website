@@ -561,12 +561,12 @@ const byCode = c => items.find(i => i.code === c);
 /* categories */
 const CATS = [
   {k:"necklace",en:"Necklaces",fa:"گردنبند",code:"cat-n",stone:"gold",photo:"img/cat-necklace.png"},
-  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq",from:"AAD-66"},
-  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby",from:"AAC-592"},
-  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald",from:"AAA-53"},
+  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq",photo:"img/cat-bracelet.png"},
+  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby"},
+  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald"},
   {k:"persian",en:"Name jewellery",fa:"اسم فارسی",code:"cat-name",stone:"gold",photo:"img/name-necklace.jpg"},
   {k:"persian",en:"Minakari",fa:"میناکاری",code:"cat-m",stone:"lapis",photo:"img/minakari.jpg"},
-  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis",from:"AAB-158"},
+  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis"},
   {k:"accessories",en:"Accessories",fa:"اکسسوری",code:"cat-a",stone:"amethyst"}
 ];
 document.getElementById("cats").innerHTML = CATS.map(c => `<button class="cat" type="button" data-k="${c.k}"><span class="disc">${c.photo ? `<img src="${c.photo}" alt="">` : medallion(c.code, c.stone, "disc") + (c.from ? `<img src="${byCode(c.from).img}" alt="" loading="lazy" onerror="this.remove()">` : "")}</span><b>${c.en}</b><span lang="fa">${c.fa}</span></button>`).join("");
