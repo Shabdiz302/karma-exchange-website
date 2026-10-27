@@ -1,2 +1,23 @@
 [build]
   publish = "."
+
+# Old Wix addresses go to the matching part of the new page
+[[redirects]]
+  from = "/product-page/*"
+  to = "/#shop"
+  status = 301
+
+[[redirects]]
+  from = "/shop*"
+  to = "/#shop"
+  status = 301
+
+[[redirects]]
+  from = "/contact*"
+  to = "/#visit"
+  status = 301
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

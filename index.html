@@ -7,7 +7,15 @@
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Karma Exchange | Persian gold jewellery in London">
 <meta property="og:description" content="Persian gold jewellery and accessories, new and second-hand. 231a Nether Street, London N3 1NT.">
-<meta property="og:image" content="/img/logo.png">
+<meta property="og:image" content="https://karmaexchanges.com/img/og.jpg">
+<meta property="og:url" content="https://karmaexchanges.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Karma Exchange">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://karmaexchanges.com/">
+<meta name="theme-color" content="#012A21">
+<link rel="apple-touch-icon" href="/img/favicon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"JewelryStore","name":"Karma Exchange","url":"https://karmaexchanges.com/","image":"https://karmaexchanges.com/img/og.jpg","logo":"https://karmaexchanges.com/img/logo.png","telephone":"+44 20 3930 0513","email":"info@karmaexchange.co.uk","address":{"@type":"PostalAddress","streetAddress":"231a Nether Street","addressLocality":"London","postalCode":"N3 1NT","addressCountry":"GB"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"sameAs":["https://www.instagram.com/sarafikarma/","https://t.me/sarafiKarma"],"slogan":"اعتماد شما برکت کارما"}</script>
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <meta name="description" content="Karma Exchange, 231a Nether Street, London N3 1NT. Persian gold jewellery and accessories, new and second-hand.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,6 +80,8 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background
 .logo img{height:62px;width:auto}
 .logo b{font:400 26px/1 var(--display);letter-spacing:.32em;padding-left:.32em}
 .logo span{font:500 18px/1.6 var(--nast);color:var(--gold);margin-top:-2px}
+.vc a:not(.link),footer li a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+.vc a:not(.link):hover,footer li a:hover{color:var(--gold)}
 .hright{display:flex;justify-content:flex-end;align-items:center;gap:14px}
 .hright .visit{font-size:13px;color:var(--mist);text-decoration:none;letter-spacing:.06em}
 .bagbtn{position:relative;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--rule);background:transparent;color:var(--ivory);cursor:pointer}
@@ -79,7 +89,7 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background
 .bagbtn svg{width:22px;height:22px}
 .bagbtn .count{position:absolute;top:-7px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--ruby);color:#fff;font:600 11px/20px var(--body);text-align:center}
 .bagbtn .count[data-zero]{display:none}
-@media (max-width:900px){.top nav{display:none}.top .wrap{grid-template-columns:1fr auto}.logo{align-items:flex-start}.hright .visit{display:none}}
+@media (max-width:900px){.top nav{order:3;grid-column:1/-1;gap:20px;overflow-x:auto;white-space:nowrap;font-size:12px;padding-top:2px;scrollbar-width:none}.top nav::-webkit-scrollbar{display:none}.top .wrap{grid-template-columns:1fr auto}.logo{align-items:flex-start}.hright .visit{display:none}}
 
 /* hero */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule);background:radial-gradient(120% 90% at 78% 40%,#0B5E4A 0%,var(--night) 60%)}
@@ -145,10 +155,13 @@ section.blk{padding-block:96px}
 .tab:hover{color:var(--ivory)}
 .tab[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:36px 22px}
-.card{display:flex;flex-direction:column}
+.card{display:flex;flex-direction:column;min-width:0}
 .card .pic{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--lapis);border:1px solid var(--rule)}
 .card .pic > svg,.card .pic > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
 .card:hover .pic > svg,.card:hover .pic > img{transform:scale(1.04)}
+.card .pic > img.alt{opacity:0;transition:opacity .45s ease,transform .7s ease}
+.card:hover .pic > img.alt,.card:focus-within .pic > img.alt{opacity:1}
+@media (hover:none){.card .pic > img.alt{display:none}}
 .card .pic .kind{position:absolute;left:12px;bottom:12px;font:500 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--ivory);background:rgba(1,42,33,.75);padding:7px 9px}
 .badge{position:absolute;top:12px;left:12px;z-index:1;font:600 10px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:7px 9px;background:var(--ruby);color:#fff}
 .badge.gold{background:var(--gold);color:var(--night)}
@@ -163,6 +176,7 @@ section.blk{padding-block:96px}
 .price .off{font-size:12px;color:#E58AA0;font-weight:600}
 .price .por{font-size:14px;color:var(--mist)}
 .cardbtns{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:14px}
+@media (max-width:560px){.price{flex-wrap:wrap;gap:4px 8px}.tabs{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin-inline:-16px;padding:0 16px 6px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none;padding:11px 12px}.grid{grid-template-columns:1fr 1fr;gap:28px 12px}.card h3{font-size:17px}.card .pic .kind{left:8px;bottom:8px;font-size:9px;padding:5px 6px}.cardbtns{grid-template-columns:1fr}.add,.ask{padding:12px 8px;font-size:11px;letter-spacing:.1em}}
 .add,.ask{font:500 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:13px 12px;cursor:pointer;border:1px solid var(--gold)}
 .add{background:var(--gold);color:var(--night)}
 .add:hover{background:var(--ivory);border-color:var(--ivory)}
@@ -399,8 +413,8 @@ legend{font-size:13px;color:var(--mist);margin-bottom:6px}
     </div>
     <div class="wrap">
       <div class="vc"><span class="kicker">The shop</span><p class="big">231a Nether Street<br>London N3 1NT</p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=231a+Nether+Street+London+N3+1NT" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="vc"><span class="kicker">Email</span><p class="big" id="email">info@karmaexchange.co.uk</p><button class="link" type="button" id="copyEmail">Copy address</button></div>
-      <div class="vc"><span class="kicker">Call or WhatsApp</span><p class="big">020 3930 0513</p><p>WhatsApp +44 7729 390601<br>Monday to Friday, 9am to 6pm</p><a class="link" href="https://www.instagram.com/sarafikarma/" target="_blank" rel="noopener">Instagram @sarafikarma</a></div>
+      <div class="vc"><span class="kicker">Email</span><p class="big"><a id="email" href="mailto:info@karmaexchange.co.uk">info@karmaexchange.co.uk</a></p><button class="link" type="button" id="copyEmail">Copy email</button></div>
+      <div class="vc"><span class="kicker">Call or WhatsApp</span><p class="big"><a href="tel:+442039300513">020 3930 0513</a></p><p><a href="https://wa.me/447729390601" target="_blank" rel="noopener">WhatsApp +44 7729 390601</a><br>Monday to Friday, 9am to 6pm</p><a class="link" href="https://www.instagram.com/sarafikarma/" target="_blank" rel="noopener">Instagram @sarafikarma</a></div>
     </div>
   </section>
 </main>
@@ -408,9 +422,9 @@ legend{font-size:13px;color:var(--mist);margin-bottom:6px}
 <footer>
   <div class="wrap cols">
     <div><span class="logo"><img src="img/logo.png" alt="Karma Exchange" style="height:84px"></span><p class="nast" lang="fa" style="color:var(--gold);font-size:20px;margin:10px 0 0;text-align:left">اعتماد شما برکت کارما</p><p>Persian gold jewellery and accessories, new and second-hand, bought and sold in London.</p></div>
-    <div><h4>Shop</h4><ul><li><a href="#shop">Necklaces</a></li><li><a href="#shop">Bracelets &amp; Alangoo</a></li><li><a href="#shop">Earrings</a></li><li><a href="#shop">Sets</a></li><li><a href="#shop">Made to order</a></li></ul></div>
+    <div><h4>Shop</h4><ul><li><a href="#shop" data-k="necklace">Necklaces</a></li><li><a href="#shop" data-k="bracelet">Bracelets &amp; Alangoo</a></li><li><a href="#shop" data-k="earrings">Earrings</a></li><li><a href="#shop" data-k="ring">Rings</a></li><li><a href="#shop" data-k="set">Sets</a></li><li><a href="#shop" data-k="persian">Made to order</a></li></ul></div>
     <div><h4>Help</h4><ul><li><a href="#visit">Delivery &amp; collection</a></li><li><a href="#sell">Sell your gold</a></li><li><a href="#visit">Contact us</a></li></ul></div>
-    <div><h4>Visit</h4><ul><li>231a Nether Street, London N3 1NT</li><li>Mon to Fri, 9am to 6pm</li><li>020 3930 0513</li><li>info@karmaexchange.co.uk</li><li><a href="https://www.instagram.com/sarafikarma/" target="_blank" rel="noopener">Instagram</a> · <a href="https://t.me/sarafiKarma" target="_blank" rel="noopener">Telegram</a></li></ul></div>
+    <div><h4>Visit</h4><ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=231a+Nether+Street+London+N3+1NT" target="_blank" rel="noopener">231a Nether Street, London N3 1NT</a></li><li>Mon to Fri, 9am to 6pm</li><li><a href="tel:+442039300513">020 3930 0513</a></li><li><a href="https://wa.me/447729390601" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:info@karmaexchange.co.uk">info@karmaexchange.co.uk</a></li><li><a href="https://www.instagram.com/sarafikarma/" target="_blank" rel="noopener">Instagram</a> · <a href="https://t.me/sarafiKarma" target="_blank" rel="noopener">Telegram</a></li></ul></div>
   </div>
   <div class="wrap legal"><span>© Karma Exchange</span><div class="paymarks" data-online><span>Visa</span><span>Mastercard</span><span>Amex</span><span>Apple Pay</span><span>Google Pay</span></div></div>
 </footer>
@@ -468,7 +482,7 @@ legend{font-size:13px;color:var(--mist);margin-bottom:6px}
     <h3 id="dlgName">Piece</h3>
     <p id="dlgText"></p>
     <p class="mail" id="dlgMail">info@karmaexchange.co.uk</p>
-    <p id="dlgPhone">Or call 020 3930 0513 · WhatsApp +44 7729 390601</p>
+    <p id="dlgPhone">Or call <a href="tel:+442039300513">020 3930 0513</a> · <a href="https://wa.me/447729390601" target="_blank" rel="noopener">WhatsApp +44 7729 390601</a></p>
     <pre class="dlglist" id="dlgList" hidden></pre>
     <div class="row"><button class="btn" type="button" id="dlgCopy">Copy email</button><button class="btn line" value="close">Close</button></div>
   </form>
@@ -500,22 +514,22 @@ const items = [
   {code:"AAA-55",name:"V.S.X butterfly set, classic",fa:"سرویس پروانه کلاسیک",cat:"set",stone:"emerald",was:1890,now:1701,img:W("d79c3f5b874e4754a4557a020994c89b")},
   {code:"AAA-119",name:"Amethyst jewellery set",fa:"سرویس آمتیست",cat:"set",stone:"amethyst",was:3899,now:3509.1,img:W("f3f4295b11c347dba1526f053ee8586a")},
   /* Handmade Persian pieces in the shop: Reza's photos, price on request */
-  {code:"KE-H01",name:"Tulip collar necklace",fa:"گردنبند لاله",cat:"necklace",stone:"ruby",por:true,hand:true,photo:"img/r-tulip-collar.jpg"},
-  {code:"KE-H02",name:"Eslimi garnet pendant",fa:"آویز اسلیمی",cat:"necklace",stone:"ruby",por:true,hand:true,photo:"img/r-eslimi-garnet-pendant.jpg"},
-  {code:"KE-H03",name:"Lapis filigree necklace",fa:"گردنبند لاجورد",cat:"necklace",stone:"lapis",por:true,hand:true,photo:"img/r-lapis-filigree-necklace.jpg"},
+  {code:"KE-H01",name:"Tulip collar necklace",fa:"گردنبند لاله",cat:"necklace",stone:"ruby",por:true,hand:true,photo:"img/r-tulip-collar.jpg",photo2:"img/r-tulip-collar-2.jpg"},
+  {code:"KE-H02",name:"Eslimi garnet pendant",fa:"آویز اسلیمی",cat:"necklace",stone:"ruby",por:true,hand:true,photo:"img/r-eslimi-garnet-pendant.jpg",photo2:"img/r-eslimi-garnet-pendant-2.jpg"},
+  {code:"KE-H03",name:"Lapis filigree necklace",fa:"گردنبند لاجورد",cat:"necklace",stone:"lapis",por:true,hand:true,photo:"img/r-lapis-filigree-necklace.jpg",photo2:"img/r-lapis-filigree-necklace-2.jpg"},
   {code:"KE-H04",name:"Bird drop pendant",fa:"آویز پرنده",cat:"necklace",stone:"turq",por:true,hand:true,photo:"img/r-bird-drop-pendant.jpg"},
   {code:"KE-H05",name:"Turquoise drop pendant",fa:"آویز فیروزه",cat:"necklace",stone:"turq",por:true,hand:true,photo:"img/r-turquoise-drop-pendant.jpg"},
   {code:"KE-H06",name:"Leaf cuff bracelet",fa:"دستبند برگ",cat:"bracelet",stone:"emerald",por:true,hand:true,photo:"img/r-bronze-leaf-cuff.jpg"},
-  {code:"KE-H07",name:"Lapis bird earrings",fa:"گوشواره پرنده لاجورد",cat:"earrings",stone:"lapis",por:true,hand:true,photo:"img/r-lapis-bird-earrings.jpg"},
-  {code:"KE-H08",name:"Rose and lapis pearl earrings",fa:"گوشواره گل سرخ",cat:"earrings",stone:"pearl",por:true,hand:true,photo:"img/r-rose-lapis-earrings.jpg"},
+  {code:"KE-H07",name:"Lapis bird earrings",fa:"گوشواره پرنده لاجورد",cat:"earrings",stone:"lapis",por:true,hand:true,photo:"img/r-lapis-bird-earrings.jpg",photo2:"img/r-lapis-bird-earrings-2.jpg"},
+  {code:"KE-H08",name:"Rose and lapis pearl earrings",fa:"گوشواره گل سرخ",cat:"earrings",stone:"pearl",por:true,hand:true,photo:"img/r-rose-lapis-earrings.jpg",photo2:"img/r-rose-lapis-earrings-2.jpg"},
   {code:"KE-H09",name:"Blue stone drop earrings",fa:"گوشواره سنگ آبی",cat:"earrings",stone:"lapis",por:true,hand:true,photo:"img/r-blue-drop-earrings.jpg"},
-  {code:"KE-H10",name:"Calligraphy leaf earrings",fa:"گوشواره خوشنویسی",cat:"earrings",stone:"gold",por:true,hand:true,photo:"img/r-calligraphy-leaf-earrings.jpg"},
+  {code:"KE-H10",name:"Calligraphy leaf earrings",fa:"گوشواره خوشنویسی",cat:"earrings",stone:"gold",por:true,hand:true,photo:"img/r-calligraphy-leaf-earrings.jpg",photo2:"img/r-calligraphy-leaf-earrings-2.jpg"},
   {code:"KE-H11",name:"Filigree ear cuff",fa:"کاف گوش",cat:"earrings",stone:"pearl",por:true,hand:true,photo:"img/r-filigree-ear-cuff.jpg"},
   {code:"KE-H12",name:"Pink tulip enamel earrings",fa:"گوشواره لاله صورتی",cat:"earrings",stone:"ruby",por:true,hand:true,photo:"img/r-pink-tulip-earrings.jpg"},
   {code:"KE-H13",name:"Red tulip mirror earrings",fa:"گوشواره لاله آینه",cat:"earrings",stone:"ruby",por:true,hand:true,photo:"img/r-red-tulip-earrings.jpg"},
   {code:"KE-H14",name:"Good thoughts, words, deeds ring",fa:"انگشتر پندار نیک",cat:"ring",stone:"turq",por:true,hand:true,photo:"img/r-pendar-ring.jpg"},
   {code:"KE-H15",name:"Iran map turquoise ring",fa:"انگشتر نقشه ایران",cat:"ring",stone:"turq",por:true,hand:true,photo:"img/r-iran-map-ring.jpg"},
-  {code:"KE-H16",name:"Silver tulip ring",fa:"انگشتر لاله",cat:"ring",stone:"pearl",por:true,hand:true,photo:"img/r-tulip-ring.jpg"},
+  {code:"KE-H16",name:"Silver tulip ring",fa:"انگشتر لاله",cat:"ring",stone:"pearl",por:true,hand:true,photo:"img/r-tulip-ring.jpg",photo2:"img/r-tulip-ring-2.jpg"},
   {code:"KE-H17",name:"Amber filigree ring",fa:"انگشتر کهربا",cat:"ring",stone:"gold",por:true,hand:true,photo:"img/r-amber-filigree-ring.jpg"},
   {code:"KE-H18",name:"Carnelian paisley ring",fa:"انگشتر عقیق بته جقه",cat:"ring",stone:"ruby",por:true,hand:true,photo:"img/r-carnelian-paisley-ring.jpg"},
   {code:"KE-H19",name:"Hammered garnet ring",fa:"انگشتر گارنت",cat:"ring",stone:"ruby",por:true,hand:true,photo:"img/r-hammered-garnet-ring.jpg"},
@@ -528,8 +542,8 @@ const items = [
   {code:"KE-H26",name:"Green enamel leaf brooch",fa:"سنجاق برگ",cat:"accessories",stone:"emerald",por:true,hand:true,photo:"img/r-green-leaf-brooch.jpg"},
   /* Persian made-to-order range: price confirmed on enquiry */
   {code:"KE-P01",name:"Farsi name necklace",fa:"گردنبند اسم فارسی",cat:"persian",tags:["name"],stone:"gold",por:true,photo:"img/name-necklace.jpg"},
-  {code:"KE-P02",name:"Farsi name bracelet",fa:"دستبند اسم",cat:"persian",tags:["name"],stone:"gold",por:true,photo:"img/p-KE-P02.png"},
-  {code:"KE-P03",name:"Alangoo bangles",fa:"النگو",cat:"persian",tags:["bracelet"],stone:"gold",por:true,photo:"img/p-KE-P03.png"},
+  {code:"KE-P02",name:"Farsi name bracelet",fa:"دستبند اسم",cat:"persian",tags:["name"],stone:"gold",por:true,photo:"img/p-KE-P02.jpg"},
+  {code:"KE-P03",name:"Alangoo bangles",fa:"النگو",cat:"persian",tags:["bracelet"],stone:"gold",por:true,photo:"img/p-KE-P03.jpg"},
   {code:"KE-P04",name:"Van Yakad pendant",fa:"وان یکاد",cat:"persian",stone:"pearl",por:true},
   {code:"KE-P05",name:"Minakari enamel pendant",fa:"میناکاری",cat:"persian",stone:"lapis",por:true,photo:"img/r-minakari-pendant.jpg"},
   {code:"KE-P06",name:"Neyshabur turquoise ring",fa:"انگشتر فیروزه",cat:"persian",tags:["ring"],stone:"turq",por:true,img:"https://images.unsplash.com/photo-1708176995581-adf048de7ebd?w=800"},
@@ -560,7 +574,7 @@ function starPath(cx, cy, n, R, r, rot){
 function medallion(code, stone, shape){
   const h = hash(code), n = [6,8,10,12,16][h % 5], rot = (h >> 3) % 360 * Math.PI/180, gem = STONE[stone] || STONE.gold;
   const tall = shape !== "disc", W = 200, H = tall ? 250 : 200, cx = W/2, cy = H/2, id = "m" + h.toString(36);
-  const bgN = [6,8][(h >> 5) % 2], bgS = 34 + (h >> 7) % 10;
+  const bgN = [6,8][(h >>> 5) % 2], bgS = 34 + (h >>> 7) % 10;
   let petals = ""; for (let i = 0; i < n; i++){ const a = rot + i*2*Math.PI/n; petals += `<ellipse cx="${(cx + 46*Math.cos(a)).toFixed(1)}" cy="${(cy + 46*Math.sin(a)).toFixed(1)}" rx="7" ry="3.2" transform="rotate(${(a*180/Math.PI).toFixed(1)} ${(cx + 46*Math.cos(a)).toFixed(1)} ${(cy + 46*Math.sin(a)).toFixed(1)})" fill="${gem}" opacity=".9"/>`; }
   let dots = ""; for (let i = 0; i < n*2; i++){ const a = rot + i*Math.PI/n; dots += `<circle cx="${(cx + 66*Math.cos(a)).toFixed(1)}" cy="${(cy + 66*Math.sin(a)).toFixed(1)}" r="1.8" fill="#F2D071"/>`; }
   return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -581,20 +595,20 @@ function medallion(code, stone, shape){
   </svg>`;
 }
 /* real product photo when hosted; falls back to the medallion where the image can't load */
-const pic = (i, shape) => medallion(i.code, i.stone, shape) + (i.photo ? `<img src="${i.photo}" alt="${i.name}" loading="lazy">` : i.img ? `<img src="${i.img}" alt="${i.name}" loading="lazy" onerror="this.remove()">` : "");
+const pic = (i, shape) => medallion(i.code, i.stone, shape) + (i.photo ? `<img src="${i.photo}" alt="${i.name}" loading="lazy">` + (i.photo2 ? `<img class="alt" src="${i.photo2}" alt="" loading="lazy">` : "") : i.img ? `<img src="${i.img}" alt="${i.name}" loading="lazy" onerror="this.remove()">` : "");
 const gbp = n => "£" + n.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2});
 const byCode = c => items.find(i => i.code === c);
 
 /* categories */
 const CATS = [
-  {k:"necklace",en:"Necklaces",fa:"گردنبند",code:"cat-n",stone:"gold",photo:"img/cat-necklace.png"},
-  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq",photo:"img/cat-bracelet.png"},
-  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby",photo:"img/cat-earrings.png"},
-  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald",photo:"img/cat-sets.png"},
+  {k:"necklace",en:"Necklaces",fa:"گردنبند",code:"cat-n",stone:"gold",photo:"img/cat-necklace.jpg"},
+  {k:"bracelet",en:"Bracelets",fa:"دستبند",code:"cat-b",stone:"turq",photo:"img/cat-bracelet.jpg"},
+  {k:"earrings",en:"Earrings",fa:"گوشواره",code:"cat-e",stone:"ruby",photo:"img/cat-earrings.jpg"},
+  {k:"set",en:"Sets",fa:"سرویس",code:"cat-s",stone:"emerald",photo:"img/cat-sets.jpg"},
   {k:"persian",en:"Name jewellery",fa:"اسم فارسی",code:"cat-name",stone:"gold",photo:"img/name-necklace.jpg"},
   {k:"persian",en:"Minakari",fa:"میناکاری",code:"cat-m",stone:"lapis",photo:"img/minakari.jpg"},
-  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis",photo:"img/cat-evil-eye.png"},
-  {k:"accessories",en:"Accessories",fa:"اکسسوری",code:"cat-a",stone:"amethyst",photo:"img/cat-accessories.png"}
+  {k:"persian",en:"Evil eye",fa:"چشم نظر",code:"cat-eye",stone:"lapis",photo:"img/cat-evil-eye.jpg"},
+  {k:"accessories",en:"Accessories",fa:"اکسسوری",code:"cat-a",stone:"amethyst",photo:"img/cat-accessories.jpg"}
 ];
 document.getElementById("cats").innerHTML = CATS.map(c => `<button class="cat" type="button" data-k="${c.k}"><span class="disc">${c.photo ? `<img src="${c.photo}" alt="">` : medallion(c.code, c.stone, "disc") + (c.from ? `<img src="${byCode(c.from).img}" alt="" loading="lazy" onerror="this.remove()">` : "")}</span><b>${c.en}</b><span lang="fa">${c.fa}</span></button>`).join("");
 document.getElementById("cats").addEventListener("click", e => { const b = e.target.closest(".cat"); if (!b) return; current = b.dataset.k; render(); document.getElementById("shop").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); });
@@ -612,6 +626,7 @@ document.getElementById("craftrow").innerHTML = CRAFTS.map((c,i) => `<div class=
 /* shop grid */
 const grid = document.getElementById("grid"), tabs = document.getElementById("tabs");
 let current = "all";
+document.querySelectorAll("footer a[data-k]").forEach(a => a.addEventListener("click", () => { current = a.dataset.k; render(); }));
 let bag = [];
 try { bag = JSON.parse(localStorage.getItem("ke-bag2") || "[]").filter(c => byCode(c) && !byCode(c).por); } catch(e){ bag = []; }
 const saveBag = () => { try { localStorage.setItem("ke-bag2", JSON.stringify(bag)); } catch(e){} };
@@ -727,7 +742,7 @@ function copyFrom(el, btn, label){
   const fallback = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected, press Ctrl+C"; };
   try { navigator.clipboard.writeText(el.textContent).then(done, fallback); } catch(err){ fallback(); }
 }
-document.getElementById("copyEmail").addEventListener("click", e => copyFrom(document.getElementById("email"), e.currentTarget, "Copy address"));
+document.getElementById("copyEmail").addEventListener("click", e => copyFrom(document.getElementById("email"), e.currentTarget, "Copy email"));
 document.getElementById("dlgCopy").addEventListener("click", e => { const list = document.getElementById("dlgList"); copyFrom(list.hidden ? document.getElementById("dlgMail") : list, e.currentTarget, list.hidden ? "Copy email" : "Copy list"); });
 renderBag();
 
